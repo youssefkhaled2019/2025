@@ -1,0 +1,47 @@
+Python Tutorial
+
+
+ 12-Python Operators   
+         -  https://www.w3schools.com/python/python_operators.asp 
+    Python Lists  
+         - List Methods : https://www.w3schools.com/python/python_lists_methods.asp
+    Python Tuples 
+    Python Sets 
+         -Set Methods : https://www.w3schools.com/python/python_sets_methods.asp
+    Python Dictionaries 
+         -Methods : https://www.w3schools.com/python/python_dictionaries_methods.asp
+       
+    Python Lambda 
+    Python Arrays
+    Python Classes/Objects
+    Python Inheritance   <-------
+    Python Iterators
+    Python Polymorphism
+    Python Scope
+    Python Modules
+    Python Dates
+    Python Math
+    Python JSON
+    Python RegEx
+    Python PIP
+    Python Try...Except
+    Python User Input
+    Python String Formatting
+
+
+
+
+
+
+Python MongoDB
+     MongoDB Get Started
+     MongoDB Create DB
+     MongoDB Collection
+     MongoDB Insert
+     MongoDB Find
+     MongoDB Query
+     MongoDB Sort
+     MongoDB Delete
+     MongoDB Drop Collection
+     MongoDB Update
+     MongoDB Limit     

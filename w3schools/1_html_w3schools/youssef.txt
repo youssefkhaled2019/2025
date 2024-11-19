@@ -1,15 +1,14 @@
+https://www.w3schools.com/html/html_tables.asp
+https://www.w3schools.com/html/html_forms_attributes.asp
+
 HTML Tutorial
     HTML Quotations
     HTML Colors
-    HTML Links
     HTML Images
-    HTML Tables
-    HTML Div
+                HTML Div
     HTML Classes
     HTML Id
     HTML Iframes
-    HTML JavaScript
-    HTML File Paths
     HTML Head
     HTML Layout
     HTML Responsive
@@ -24,8 +23,6 @@ HTML Tutorial
     HTML vs. XHTML
 
 HTML Forms
-    HTML Forms
-    HTML Form Attributes
     HTML Form Elements
     HTML Input Types
     HTML Input Attributes
