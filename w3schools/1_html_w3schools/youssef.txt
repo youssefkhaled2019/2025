@@ -5,14 +5,11 @@ HTML Tutorial
     HTML Quotations
     HTML Colors
     HTML Images
-                HTML Div
-    HTML Classes
-    HTML Id
-    HTML Iframes
-    HTML Head
+    HTML Computercode
+
     HTML Layout
     HTML Responsive
-    HTML Computercode
+
     HTML Semantics
     HTML Style Guide
     HTML Entities
@@ -22,11 +19,7 @@ HTML Tutorial
     HTML URL Encode
     HTML vs. XHTML
 
-HTML Forms
-    HTML Form Elements
-    HTML Input Types
-    HTML Input Attributes
-    Input Form Attributes
+
 
 HTML Graphics
     HTML Canvas
@@ -59,19 +52,19 @@ HTML Examples
     HTML Accessibility
 
 HTML References
-HTML Tag List
-HTML Attributes
-HTML Global Attributes
-HTML Browser Support
-HTML Events
-HTML Colors
-HTML Canvas
-HTML Audio/Video
-HTML Doctypes
-HTML Character Sets
-HTML URL Encode
-HTML Lang Codes
-HTTP Messages
-HTTP Methods
-PX to EM Converter
-Keyboard Shortcuts
+    HTML Tag List
+    HTML Attributes
+    HTML Global Attributes
+    HTML Browser Support
+    HTML Events
+    HTML Colors
+    HTML Canvas  <----------------------
+    HTML Audio/Video
+    HTML Doctypes
+    HTML Character Sets
+    HTML URL Encode
+    HTML Lang Codes
+    HTTP Messages
+    HTTP Methods
+    PX to EM Converter
+    Keyboard Shortcuts

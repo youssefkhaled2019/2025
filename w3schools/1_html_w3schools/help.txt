@@ -1,0 +1,22 @@
+Input Restrictions
+checked 	Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio")
+maxlength 	Specifies the maximum number of character for an input field   #  <input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+================================================================================
+checked 
+disabled 	                         #  <input type="text" id="fname" name="fname" value="John" disabled><br>
+max 	    
+maxlength 	                        #  <input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+min 	                             #  <input type="number" id="quantity" name="quantity" min="1" max="5">
+pattern 	
+readonly 	                         #  <input type="text" id="fname" name="fname" value="John" readonly><br>
+required 	                         #  <input type="text" id="username" name="username" required>
+size 	                             #  <input type="text" id="fname" name="fname" size="50"><br>
+step 	    
+value 	                                 #  <input type="text" id="fname" name="fname" value="John"><br>
+autofocus                                    #  <input type="text" id="fname" name="fname" autofocus><br>
+autocomplete                                #  <form action="/action_page.php" autocomplete="on">
+novalidate                                 <form action="/action_page.php" novalidate>
+enctype="multipart/form-data"
+formnovalidate                             <input type="submit" formnovalidate="formnovalidate"  value="Submit without validation">
+multiple                                      <select id="cars" name="cars" size="3" multiple>
+                                              <input type="file" id="myfile" name="myfile" multiple />
