@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .span {
+        background-color: #d1f76b;
+        font-size: 20px;
+
+        /* align-items: center; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+
+        font-weight: bold;
+      }
+      /* -----------1-------------------- */
+
+      .center {
+        margin: auto;
+        width: 60%;
+        border: 3px solid #73ad21;
+        padding: 10px;
+        text-align: center;
+      }
+      /* ---------------2---------------- */
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      /* ---------------3---------------- */
+      .right {
+        position: relative;
+        left: 0;
+        width: 300px;
+        border: 3px solid #73ad21;
+        padding: 10px;
+      }
+      /* ---------------4---------------- */
+
+      .right2 {
+        float: left;
+        width: 300px;
+        border: 3px solid #73ad21;
+        padding: 10px;
+      }
+      .div2 {
+        clear: left;
+      }
+
+      /* ---------------5---------------- */
+
+      .ex5 {
+        border: 3px solid #4caf50;
+        padding: 5px;
+      }
+
+      .img1 {
+        float: right;
+      }
+
+      .img2 {
+        float: right;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      /* ---------------6---------------- */
+      .center2 {
+        padding: 70px 0;
+        border: 3px solid green;
+        text-align: center;
+      }
+      /* ---------------7---------------- */
+      .center3 {
+        line-height: 200px;
+        height: 200px;
+        border: 3px solid green;
+        text-align: center;
+      }
+
+      .center3 p {
+        line-height: 1.5;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      /* ---------------8 ---------------- */
+
+      .center4 {
+        height: 200px;
+        position: relative;
+        border: 3px solid green;
+      }
+
+      .center4 p {
+        margin: 0;
+        padding: 5px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .center4 h1 {
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        /* -ms-transform: translate(-50%, -50%); */
+        transform: translate(-50%, -50%);
+      }
+      /* ----------------9--------------- */
+      .center5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        text-align: center;
+        border: 3px solid green;
+      }
+      /* ------------------------------- */
+
+      /* ------------------------------- */
+
+      /* ------------------------------- */
+    </style>
+  </head>
+  <body>
+    <!-- ----------------------------------------------- -->
+    <hr />
+    <span class="span">1</span>
+    <hr />
+    <div class="center">
+      <p>Hello World!</p>
+    </div>
+    <!-- ----------------------------------------------- -->
+
+    <hr />
+    <span class="span">2</span>
+
+    <hr />
+    <img src="/src/img_5terre.jpg" alt="Paris" style="width: 40%" />
+    <!-- ----------------------------------------------- -->
+
+    <hr />
+    <span class="span">3</span>
+
+    <hr />
+    <div class="right">
+      <p>
+        In my younger and more vulnerable years my father gave me some advice
+        that I've been turning over in my mind ever since.
+      </p>
+    </div>
+    <!-- ----------------------------------------------- -->
+
+    <hr />
+    <span class="span">4</span>
+
+    <hr />
+    <div class="right2">
+      <p>
+        In my younger and more vulnerable years my father gave me some advice
+        that I've been turning over in my mind ever since.
+      </p>
+    </div>
+    <div class="div2"></div>
+    <!-- ----------------------------------------------- -->
+
+    <hr />
+    <span class="span">5</span>
+
+    <hr />
+    <h2>Without Clearfix</h2>
+
+    <p>
+      This image is floated to the right. It is also taller than the element
+      containing it, so it overflows outside of its container:
+    </p>
+
+    <div class="ex5">
+      <img
+        class="img1"
+        src="/src/pineapple.jpg"
+        alt="Pineapple"
+        width="170"
+        height="170"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      imperdiet...
+    </div>
+
+    <h2 style="clear: right">With New Modern Clearfix</h2>
+    <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+    <div class="clearfix ex5">
+      <img
+        class="img2"
+        src="/src/pineapple.jpg"
+        alt="Pineapple"
+        width="170"
+        height="170"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      imperdiet...
+    </div>
+    <!-- ----------------------------------------------- -->
+
+    <hr />
+    <span class="span">6</span>
+    <hr />
+
+    <div class="center2">
+      <h1>I am vertically and horizontally centered.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+        laudantium, sint tempore porro harum provident eligendi, ipsum veniam
+        officia, suscipit cupiditate id. Iusto, porro pariatur. Saepe,
+        consectetur! Odit, vero molestiae.
+      </p>
+    </div>
+    <!-- ----------------------------------------------- -->
+    <hr />
+    <span class="span">7</span>
+    <hr />
+
+    <div class="center3">
+      <p>I am vertically and horizontally centered.</p>
+    </div>
+
+    <!-- ----------------------------------------------- -->
+    <hr />
+    <span class="span">8 #???</span>
+    <hr />
+
+    <div class="center4">
+      <h1>I am vertically and horizontally centered.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+        laudantium, sint tempore porro harum provident eligendi, ipsum veniam
+        officia, suscipit cupiditate id. Iusto, porro pariatur. Saepe,
+        consectetur! Odit, vero molestiae.
+      </p>
+    </div>
+
+    <!-- ----------------------------------------------- -->
+    <hr />
+    <span class="span">9</span>
+    <hr />
+
+    <div class="center5">
+      <h1>I am vertically and horizontally centered.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+        laudantium, sint tempore porro harum provident eligendi, ipsum veniam
+        officia, suscipit cupiditate id. Iusto, porro pariatur. Saepe,
+        consectetur! Odit, vero molestiae.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+     #panel1,#panel2, .flip {
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  border: solid 1px #a6d8a8;
+  margin: auto;
+  transition: 10s;
+}
+
+#panel1,#panel2 {
+  display: none;
+  transition: 10s;
+
+}
+    </style>
+  </head>
+  <body>
+    
+<p class="flip" onclick="myFunction('panel1')">Click to show panel</p>
+<div id="panel1">
+  <p>This panel contains a div element, which is hidden by default (display: none).</p>
+  <p>It is styled with CSS and we use JavaScript to show it (display: block).</p>
+  <p>How it works: Notice that the p element with class="flip" has an onclick attribute attached to it. When the user clicks on the p element, a function called myFunction() is executed, which changes the style of the div with id="panel" from display:none (hidden) to display:block (visible).</p>
+  <p>You will learn more about JavaScript in our JavaScript Tutorial.</p>
+</div>
+<p class="flip" onclick="myFunction('panel2')">Click to show panel</p>
+
+
+<div id="panel2">
+  <p>This panel contains a div element, which is hidden by default (display: none).</p>
+  <p>It is styled with CSS and we use JavaScript to show it (display: block).</p>
+  <p>How it works: Notice that the p element with class="flip" has an onclick attribute attached to it. When the user clicks on the p element, a function called myFunction() is executed, which changes the style of the div with id="panel" from display:none (hidden) to display:block (visible).</p>
+  <p>You will learn more about JavaScript in our JavaScript Tutorial.</p>
+</div>
+<script>
+function myFunction(x) {
+if(document.getElementById(x).style.display === "block"){
+  document.getElementById(x).style.display = "none";
+}
+else{
+  document.getElementById(x).style.display = "block";
+
+
+}
+}
+</script>
+  </body>
+</html>

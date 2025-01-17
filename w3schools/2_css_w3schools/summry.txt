@@ -1,0 +1,263 @@
+/* This is a single-line comment */
+------------------------------------[Combinators]---------------------------------------------
+
+There are four different combinators in CSS:
+
+    Descendant combinator (space)
+    Child combinator (>)
+    Next sibling combinator (+)
+    Subsequent-sibling combinator (~)
+
+------------------------------------[]---------------------------------------------
+*{}
+#id{}
+.class{}
+.class.class{}
+element.class.class{}
+element,element,element{}
+div > p
+div + p
+div ~ p
+------------------------------------[background]---------------------------------------------
+  background: #ffffff url("img_tree.png") no-repeat right top; #shorthand
+
+  background-color: lightblue;
+                    rgba(0, 128, 0, 0.3) 
+                    #ff0000
+                    rgb(255,0,0)
+
+background-image: url("paper.gif");      
+background-position: right top;[right,top,.....]
+background-attachment: fixed;[scroll,fixed]
+
+background-repeat: ;          [no-repeat,repeat-x,repeat-y,]     # default = repeats an image both horizontally and vertically.
+
+
+
+
+background-clip 	Specifies the painting area of the background [https://www.w3schools.com/cssref/css3_pr_background-clip.php]
+background-origin 	Specifies where the background image(s) is/are positioned
+background-size 	Specifies the size of the background image(s)
+------------------------------------[border]---------------------------------------------
+border: 5px solid red;#shorthand
+border-left: 6px solid red;
+border-right-style: solid;
+
+border-style: [dotted,dashed,solid,double,none,hidden]
+             dotted solid; 
+             dotted solid dotted solid; 
+
+border-width :[5px,medium,thick]
+               2px 1px 4px 3px; /* 2px top, 1px right, 4px bottom and 3px left */
+
+border-color: [blue,#ff0000,rgb(255,0,0),hsl(0, 100%, 50%)]               
+              red green blue yellow; /* red top, green right, blue bottom and yellow left */
+
+border-radius: 5px;
+
+
+border-collapse: collapse; # note: use iin table  
+#The border-collapse property sets whether the table borders should be collapsed into a single border:
+
+------------------------------------[outline]---------------------------------------------
+outline: 5px solid yellow;
+
+outline-style: dotted;[dotted,dashed,solid,double,,]
+outline-color: red; #hsl(0, 100%, 50%),rgb(255, 0, 0),#ff0000,
+outline-width: thin;[thin,medium,4px,,]
+outline-offset: 15px; #The outline-offset property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.
+------------------------------------[padding-margin ]---------------------------------------------
+  padding: 70px; # ,%,px, pt, cm,[inherit]  from the parent element
+         : 25px top  50px right  75px bottom  100px left 
+  padding-top:
+
+
+
+  ex:
+  padding: auto  30px;
+  line-height:120px ;
+------------------------------------[height-width]---------------------------------------------
+height: 50px; [auto ,% px vm erm rm ,inherit ,,]
+width: 100%;
+max-width
+------------------------------------[]---------------------------------------------
+color: white;
+
+
+ #f1f1f1;  #gray
+ #ddd
+------------------------------------[]---------------------------------------------
+
+  list-style-type: circle;[none,circle,square,upper-roman, lower-alpha,,]
+  list-style-image: url('sqpurple.gif');
+  list-style-position: ;[inside,outside]
+
+
+
+------------------------------------[Text]---------------------------------------------
+text-align: center; [left,right,,center,justify]         #justify; value stretches the lines so that each line has equal width (like in newspapers and magazines).
+
+text-align-last;[right,center,justify] # property specifies how to align the last line of a text.
+
+text-decoration: none;                       [overline,line-through,underline,[overline underline] ,none]                                 #line under text
+                 underline red double 5px;
+
+text-decoration-color: blue;
+text-decoration-style: solid;[solid,double,dotted,dashed,wavy,,]
+text-decoration-thickness: auto; [auto,5px,25%,,,]
+
+text-indent:4px                                                # property is used to specify the indentation of the first line of a text:
+text-transform: uppercase;[uppercase,lowercase,capitalize,]
+letter-spacing: 3px;   [-2px]                                  #property is used to specify the space between the characters in a text.
+word-spacing: 10px;     [-2px]                                 # property is used to specify the space between the words in a text.
+white-space: nowrap;[wrap,nowrap]                              # The white-space property specifies how white-space inside an element is handled.
+
+vertical-align;[baseline,text-top,text-bottom,sub,super] 
+  ex
+     img.b{vertical-align: text-top;}
+     <p>An <img class="b" src="sqpurple.gif" width="9" height="9"> image with a text-top alignment.</p> 
+
+line-height: 1.8;
+
+text-shadow: 2px 2px 
+             2px 2px red;
+             2px 2px 5px red;
+             1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; #h v  blur_effect  
+------------------------------------[]---------------------------------------------   
+https://www.w3schools.com/css/css_font_websafe.asp
+https://www.w3schools.com/css/css_font_google.asp
+
+
+font-family:  "Times New Roman", Times, serif;
+              Arial, Helvetica, sans-serif; |  Verdana, sans-serif; |Tahoma, sans-serif; |'Trebuchet MS', sans-serif;
+              "Lucida Console", "Courier New", monospace;
+
+font-size: 20px; [2.5em,100%,10vw] #
+   note:Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.
+
+font-style: [normal,italic]
+font-weight: normal;[normal,lighter,bold,900,]
+font-variant: [normal,small-caps] ; 
+
+------------------------------------[opacity]---------------------------------------------
+opacity: 0.3;# 1.0==100%
+------------------------------------[direction]---------------------------------------------
+
+  direction: rtl;
+  unicode-bidi: bidi-override;  # ex  This is right-to-left text direction. => noitcerid txet tfel-ot-thgir si sihT
+  
+  
+------------------------------------[box-sizing]---------------------------------------------
+box-sizing: border-box; #??
+
+
+------------------------------------[]---------------------------------------------
+a:link
+a:visited
+a:hover
+a:active
+note:
+-a:hover MUST come after a:link and a:visited
+-a:active MUST come after a:hover
+
+:focus
+
+------------------------------------[float ]---------------------------------------------
+float [left ,right ,none ,inherit ]
+clear [none ,left ,right ,both ,inherit ,,,]
+
+-The clear property can have one of the following values:
+    none - The element is not pushed below left or right floated elements. This is default
+    left - The element is pushed below left floated elements
+    right - The element is pushed below right floated elements
+    both - The element is pushed below both left and right floated elements
+    inherit - The element inherits the clear value from its parent
+    
+-When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.
+------------------------------------[display]---------------------------------------------
+display: inline;[none,block,,,,,,]
+
+
+
+visibility:hidden
+------------------------------------[position ]---------------------------------------------
+position: static;[static,relative,fixed,absolute,sticky,]
+top
+right
+bottom 
+left 
+ex:
+<div class="relative">
+  <div class="absolute">
+
+
+------------------------------------[z-index ]---------------------------------------------
+position: absolute;
+  z-index: -1;
+
+ex:
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+
+
+Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) 
+and flex items (elements that are direct children of display: flex elements).
+
+
+------------------------------------[overflow  ]---------------------------------------------
+overflow: visible;[visible,hidden,scroll ,auto ]
+
+overflow-wrap:normal [normal,break-word,anywhere] #Specifies whether or not the browser can break lines with long words, if they overflow its container
+------------------------------------[Icons]---------------------------------------------
+# https://www.w3schools.com/icons/fontawesome5_intro.asp
+----------------[Awesome Icons]----------------------
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<i class="fas fa-cloud"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-car"></i>
+<i class="fas fa-file"></i>
+<i class="fas fa-bars"></i>
+
+</body>
+
+
+----------------------[Bootstrap Icons]------------------------------
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<i class="glyphicon glyphicon-cloud"></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>
+
+</body>
+
+--------------------------[Google Icons]--------------------------
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+<i class="material-icons">cloud</i>
+<i class="material-icons">favorite</i>
+<i class="material-icons">attachment</i>
+<i class="material-icons">computer</i>
+<i class="material-icons">traffic</i>
+
+</body>
+------------------------------------[!important;]------------------------------------------
+!important;
+ex:  background-color: red !important;
+
+------------------------------------[!important;]------------------------------------------

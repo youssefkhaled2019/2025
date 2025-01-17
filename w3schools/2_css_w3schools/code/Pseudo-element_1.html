@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* --------------------------------------- */
+      p::first-line {
+        color: #ff0000;
+        font-variant: small-caps;
+        /* 
+  Note: The ::first-line pseudo-element can only be applied to block-level elements.
+
+The following properties apply to the ::first-line pseudo-element:
+
+    font properties
+    color properties
+    background properties
+    word-spacing
+    letter-spacing
+    text-decoration
+    vertical-align
+    text-transform
+    line-height
+    clear
+
+    */
+      }
+      /* --------------------------------------- */
+      p::first-letter {
+        color: #141313;
+        font-size: xx-large;
+      }
+      /* --------------------------------------- */
+      h1::before {
+        content: url(/src/smiley.gif);
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+      /* --------------------------------------- */
+      h1::after {
+        content: url(/src/smiley.gif);
+        margin-left: 10px;
+      }
+      /* --------------------------------------- */
+      ::marker {
+        color: red;
+        font-size: 23px;
+      }
+      /* --------------------------------------- */
+      ::selection {
+        color: red;
+        background: yellow;
+      }
+      /* --------------------------------------- */
+
+      /* --------------------------------------- */
+
+      /* --------------------------------------- */
+
+      /* --------------------------------------- */
+
+      /* --------------------------------------- */
+    </style>
+  </head>
+  <body>
+    <!-- ----------------------------------------------- -->
+    <hr />
+    1
+    <hr />
+    <p>
+      You can use the ::first-line pseudo-element to add a special effect to the
+      first line of a text. Some more text. And even more, and more, and more,
+      and more, and more, and more, and more, and more, and more, and more, and
+      more, and more. You can use the ::first-line pseudo-element to add a
+      special effect to the first line of a text. Some more text. And even more,
+      and more, and more, and more, and more, and more, and more, and more, and
+      more, and more, and more, and more. You can use the ::first-line
+      pseudo-element to add a special effect to the first line of a text. Some
+      more text. And even more, and more, and more, and more, and more, and
+      more, and more, and more, and more, and more, and more, and more. You can
+      use the ::first-line pseudo-element to add a special effect to the first
+      line of a text. Some more text. And even more, and more, and more, and
+      more, and more, and more, and more, and more, and more, and more, and
+      more, and more.
+    </p>
+    <!-- ----------------------------------------------- -->
+    <hr />
+    2
+    <hr />
+    <h1>This is a heading</h1>
+    <p>
+      The ::before pseudo-element inserts content before the content of an
+      element.
+    </p>
+
+    <h1>This is a heading</h1>
+    <!-- ----------------------------------------------- -->
+    <hr />
+    3
+    <hr />
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <ol>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+    </ol>
+    <!-- ----------------------------------------------- -->
+    <hr />
+    4
+    <hr />
+    <h1>Select some text on this page:</h1>
+
+    <p>This is a paragraph.</p>
+    <div>This is some text in a div element.</div>
+    <!-- ----------------------------------------------- -->
+
+    <!-- ----------------------------------------------- -->
+
+    <!-- ----------------------------------------------- -->
+
+    <!-- ----------------------------------------------- -->
+
+    <!-- ----------------------------------------------- -->
+
+    <!-- ----------------------------------------------- -->
+  </body>
+</html>

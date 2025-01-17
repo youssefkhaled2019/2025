@@ -1,0 +1,106 @@
+-CSS selectors are used to "find" (or select) the HTML elements you want to style.
+-We can divide CSS selectors into five categories:
+    Simple selectors (select elements based on name, id, class)
+    [Combinator selectors] (select elements based on a specific relationship between them)
+    [Pseudo-class selectors] (select elements based on a certain state)
+    [Pseudo-elements selectors] (select and style a part of an element)
+    [Attribute selectors] (select elements based on an attribute or attribute value)
+
+-------------------------------
+The CSS Box Model It consists of: content, padding, borders and margins
+
+
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+
+ex
+  320px (width of content area)
++ 20px (left padding + right padding)
++ 10px (left border + right border)
+= 350px (total width)
+
+  50px (height of content area)
++ 20px (top padding + bottom padding)
++ 10px (top border + bottom border)
+= 80px (total height)
+
+The total width of an element should be calculated like this:
+     Total element width = width + left padding + right padding + left border + right border
+The total height of an element should be calculated like this:
+     Total element height = height + top padding + bottom padding + top border + bottom border
+
+note:Note: The margin property also affects the total space that the box will take up on the page, but the margin is not included in the actual size of the box. The box's total width and height stops at the border.    
+-------------------------------
+Note: Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline.
+
+--------------------------------
+The [display] property has many values:
+Value 	              Description
+inline 	              Displays an element as an inline element
+block 	              Displays an element as a block element
+contents 	              Makes the container disappear, making the child elements children of the element the next level up in the DOM
+flex 	              Displays an element as a block-level flex container
+grid 	              Displays an element as a block-level grid container
+inline-block 	              	Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values
+inline-flex 	               	Displays an element as an inline-level flex container
+inline-grid 	 	              Displays an element as an inline-level grid container
+inline-table 	               	The element is displayed as an inline-level table
+list-item 	               	Let the element behave like a <li> element
+run-in  	              	Displays an element as either block or inline, depending on context
+table 	 	              Let the element behave like a <table> element
+table-caption 	 	              Let the element behave like a <caption> element
+table-column-group 	               	Let the element behave like a <colgroup> element
+table-header-group  	              	Let the element behave like a <thead> element
+table-footer-group  	              	Let the element behave like a <tfoot> element
+table-row-group 	 	              Let the element behave like a <tbody> element
+table-cell 	     	                Let the element behave like a <td> element
+table-column 	   	                Let the element behave like a <col> element
+table-row 	     	              Let the element behave like a <tr> element
+none 	The      	                element is completely removed
+initial 	     	                Sets this property to its default value
+inherit 	      	               Inherits this property from its parent element
+--------------------------------
+https://www.w3schools.com/css/css_max-width.asp
+Using max-width instead, in this situation, will improve the browser's handling of small windows. This is important when making a site usable on small devices:
+--------------------------------
+The display: inline-block Value
+
+Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+
+Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.
+
+Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.
+
+The following example shows the different behavior of display: inline, display: inline-block and display: block:
+--------------------------------
+There are four different combinators in CSS:
+
+    Descendant combinator (space)
+    Child combinator (>)
+    Next sibling combinator (+)
+    Subsequent-sibling combinator (~)
+----------------------------------------------------------------
+What are Pseudo-classes?
+
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+    Style an element when a user moves the mouse over it
+    Style visited and unvisited links differently
+    Style an element when it gets focus
+    Style valid/invalid/required/optional form elements
+-----------------------------------------------------------------
+What are Pseudo-Elements?
+
+A CSS pseudo-element is used to style specific parts of an element.
+
+For example, it can be used to:
+
+    Style the first letter or line, of an element
+    Insert content before or after an element
+    Style the markers of list items
+    Style the viewbox behind a dialog box
+-----------------------------------------------------------------
